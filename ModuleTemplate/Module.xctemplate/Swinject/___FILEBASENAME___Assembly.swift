@@ -8,15 +8,15 @@
 
 import UIKit
 
-public typealias ___VARIABLE_productName___Scene = Scene<UIViewController, ___VARIABLE_productName___SceneInput>
-typealias ___VARIABLE_productName___Assembly = SceneAssembly<___VARIABLE_productName___Factory, ___VARIABLE_productName___Scene, ___VARIABLE_productName___SceneConfig>
+public typealias ___VARIABLE_productName___Module = Module<UIViewController, ___VARIABLE_productName___ModuleInput>
+typealias ___VARIABLE_productName___Assembly = ModuleAssembly<___VARIABLE_productName___Factory, ___VARIABLE_productName___Module, ___VARIABLE_productName___ModuleConfig>
 
-final class ___VARIABLE_productName___Factory: SceneFactory {
+final class ___VARIABLE_productName___Factory: ModuleFactory {
     
-    typealias Scene = ___VARIABLE_productName___Scene
-    typealias Config = ___VARIABLE_productName___SceneConfig
+    typealias Module = ___VARIABLE_productName___Module
+    typealias Config = ___VARIABLE_productName___ModuleConfig
     
-    func createScene(resolver: Resolver, config: ___VARIABLE_productName___SceneConfig) -> ___VARIABLE_productName___Scene {
+    func createModule(resolver: Resolver, config: ___VARIABLE_productName___ModuleConfig) -> ___VARIABLE_productName___Module {
 //        let storyboard = UIStoryboard(name: <#T##String#>, bundle: <#T##Bundle?#>)
 //        let viewController = storyboard.instantiateInitialViewController() as! ___VARIABLE_productName___ViewController
 //        let viewController = storyboard.instantiateViewController(withIdentifier: <#T##String#>) as! ___VARIABLE_productName___ViewController

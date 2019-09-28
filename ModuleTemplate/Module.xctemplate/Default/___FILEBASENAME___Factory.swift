@@ -3,14 +3,14 @@
 import UIKit
 
 typealias ___VARIABLE_productName___Factory = ___VARIABLE_productName___ViewController
-public typealias ___VARIABLE_productName___Scene = Scene<UIViewController, ___VARIABLE_productName___SceneInput>
+public typealias ___VARIABLE_productName___Module = Module<UIViewController, ___VARIABLE_productName___ModuleInput>
 
-extension ___VARIABLE_productName___Factory: SceneFactory {
+extension ___VARIABLE_productName___Factory: ModuleFactory {
     
-    typealias Scene = ___VARIABLE_productName___Scene
-    typealias Config = ___VARIABLE_productName___SceneConfig
+    typealias Module = ___VARIABLE_productName___Module
+    typealias Config = ___VARIABLE_productName___ModuleConfig
     
-    static func createScene(with config: ___VARIABLE_productName___SceneConfig) -> ___VARIABLE_productName___Scene {
+    static func createModule(with config: ___VARIABLE_productName___ModuleConfig) -> ___VARIABLE_productName___Module {
         //            let storyboard = UIStoryboard(name: <#T##String#>, bundle: <#T##Bundle?#>)
         //            let viewController = storyboard.instantiateInitialViewController() as! ___VARIABLE_productName___ViewController
         //            let viewController = storyboard.instantiateViewController(withIdentifier: <#T##String#>) as! ___VARIABLE_productName___ViewController

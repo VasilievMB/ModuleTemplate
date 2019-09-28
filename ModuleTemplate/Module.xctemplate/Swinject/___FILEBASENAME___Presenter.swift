@@ -1,6 +1,6 @@
 //___FILEHEADER___
 
-class ___VARIABLE_productName___Presenter: ___VARIABLE_productName___SceneInput, ___VARIABLE_productName___ViewOutput, ___VARIABLE_productName___InteractorOutput {
+class ___VARIABLE_productName___Presenter: ___VARIABLE_productName___ModuleInput, ___VARIABLE_productName___ViewOutput, ___VARIABLE_productName___InteractorOutput {
     
     private unowned let view: ___VARIABLE_productName___ViewInput
     private let interactor: ___VARIABLE_productName___InteractorInput
@@ -14,7 +14,7 @@ class ___VARIABLE_productName___Presenter: ___VARIABLE_productName___SceneInput,
     
     // MARK: - Private
     
-    // MARK: - ___VARIABLE_productName___SceneInput
+    // MARK: - ___VARIABLE_productName___ModuleInput
     
     // MARK: - ___VARIABLE_productName___ViewOutput
     

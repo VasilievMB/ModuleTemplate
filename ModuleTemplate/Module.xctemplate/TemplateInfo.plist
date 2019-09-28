@@ -5,7 +5,7 @@
 	<key>Kind</key>
 	<string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
 	<key>Description</key>
-	<string>VIPER Scene</string>
+	<string>VIPER Module</string>
 	<key>Summary</key>
 	<string>VIPER Scene</string>
 	<key>SortOrder</key>
@@ -20,7 +20,7 @@
 	<array>
 		<dict>
 			<key>Identifier</key>
-			<string>sceneName</string>
+			<string>moduleName</string>
 			<key>Required</key>
 			<true/>
 			<key>Name</key>
@@ -34,7 +34,7 @@
 		</dict>
 		<dict>
 			<key>Default</key>
-			<string>___VARIABLE_sceneName:identifier___</string>
+			<string>___VARIABLE_moduleName:identifier___</string>
 			<key>Identifier</key>
 			<string>productName</string>
 			<key>Type</key>

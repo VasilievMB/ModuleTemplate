@@ -2,11 +2,11 @@
 
 // MARK: - Public
 
-public protocol ___VARIABLE_productName___SceneInput: class {
+public protocol ___VARIABLE_productName___ModuleInput: class {
     
 }
 
-public struct ___VARIABLE_productName___SceneConfig {
+public struct ___VARIABLE_productName___ModuleConfig {
     
 }
 

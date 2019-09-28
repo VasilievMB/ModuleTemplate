@@ -18,20 +18,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-//        let applicationContainer = Container()
-//        let applicationAssembler = Assembler(container: applicationContainer)
-//        let scenesAssembler = Assembler(
-//            [
-//                DIAssembly()
-//            ],
-//                                         parent: applicationAssembler)
-//        let config = DISceneConfig()
-//        let di = applicationContainer.resolve(DIScene.self, argument: config)
-//        
-//        assert(di != nil)
+        let applicationContainer = Container()
+        let applicationAssembler = Assembler(container: applicationContainer)
+        let modulesAssembler = Assembler(
+            [
+                TestoAssembly()
+            ],
+                                         parent: applicationAssembler)
+//        let config = DIModuleConfig()
         
-        let config = TestModuleSceneConfig()
-        let scene = TestModuleFactory.createScene(with: config)
+        let config = TestoModuleConfig()
+        let di = applicationContainer.resolve(TestoModule.self, argument: config)
+        
+        assert(di != nil)
+        
+//        let config = TestoModuleConfig()
+//        let module = TestoModuleFactory.createModule(with: config)
         
         return true
     }
