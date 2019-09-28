@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
+	<key>Description</key>
+	<string>VIPER Scene</string>
+	<key>Summary</key>
+	<string>VIPER Scene</string>
+	<key>SortOrder</key>
+	<string>1</string>
+	<key>AllowedTypes</key>
+	<array>
+		<string>public.swift-source</string>
+	</array>
+	<key>DefaultCompletionName</key>
+	<string>MyScene</string>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>sceneName</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Scene:</string>
+			<key>Description</key>
+			<string>The name of the scene to create</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_sceneName:identifier___</string>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>dependencyManagement</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Dependency management:</string>
+			<key>Description</key>
+			<string>Dependency management option to use</string>
+			<key>Type</key>
+			<string>popup</string>
+			<key>Default</key>
+			<string>Swinject</string>
+			<key>Values</key>
+			<array>
+				<string>None</string>
+				<string>Swinject</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
